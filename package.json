@@ -1,0 +1,18 @@
+{
+    "name": "node-cursor-help",
+    "type": "module",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+        "start": "node main.js"
+    },
+    "keywords": [
+        "cursor",
+        "id",
+        "reset",
+        "help"
+    ],
+    "dependencies": {
+        "uuid": "^9.0.1"
+    }
+}

@@ -2,6 +2,11 @@
 
 [English](#english) | [中文](#chinese)
 
+### Credits | 致谢
+This project is a Node.js implementation based on the original Go version by [@yuaotian](https://github.com/yuaotian/go-cursor-help).
+
+本项目是基于 [@yuaotian](https://github.com/yuaotian/go-cursor-help) 的 Go 语言版本改写的 Node.js 实现。
+
 ### Important Notice | 重要声明
 This tool is only intended for the following specific scenarios:
 1. During Cursor's official free trial period
@@ -38,25 +43,33 @@ Too many free trial accounts used on this machine. Please upgrade to pro. We hav
 - Reset Cursor free trial limitations
 - Provides both automatic and manual reset methods
 - Support multiple platforms
+- Node.js implementation for personal use
 
 ### System Support
 - ✅ Windows (Tested)
 - ✅ MacOS (Tested)
 - ✅ Linux (Tested)
 
-### Automatic Reset
+### Automatic Reset (Node.js Version)
 #### Prerequisites
-- Requires administrator/root privileges
+- Node.js installed on your system
+- npm package manager
+- Administrator/root privileges
 - Ensure Cursor is completely closed before use
 
-#### Usage
-1. Download the appropriate executable for your system:
-   - Windows: `cursor_id_modifier.exe`
-   - MacOS: `cursor_id_modifier_mac` or `cursor_id_modifier_mac_arm64`
-   - Linux: `cursor_id_modifier_linux`
-2. Run the program as administrator
-3. Follow the prompts
-4. Restart Cursor to apply changes
+#### Installation & Usage
+
+1. Clone this repository
+2. Install dependencies:
+   ```bash
+   npm/pnpm/yarn install
+   ```
+3. Run the script with administrator privileges:
+   ```bash
+   node main.js
+   ```
+4. Follow the prompts
+5. Restart Cursor to apply changes
 
 ### Manual Reset
 1. Close Cursor completely
@@ -92,6 +105,8 @@ This tool is for educational purposes only. Users bear all risks and responsibil
 
 ### Contributing
 Issues and Pull Requests are welcome to help improve this project.
+### 特别说明
+此 Node.js 版本是个人使用的版本，相比[原版的 Go 实现](https://github.com/yuaotian/go-cursor-help)，这个版本更适合前端开发人员使用。
 
 ---
 
@@ -114,19 +129,26 @@ Too many free trial accounts used on this machine. Please upgrade to pro. We hav
 - ✅ MacOS (已测试)
 - ✅ Linux (已测试)
 
-### 自动重置
+### 自动重置 (Node.js 版本)
 #### 使用前提
+- 系统已安装 Node.js
+- 已安装 npm/pnpm/yarn 包管理器
 - 需要管理员/root权限执行
 - 请确保已完全退出Cursor程序
 
-#### 使用方法
-1. 下载对应系统的可执行文件：
-   - Windows系统：`cursor_id_modifier.exe`
-   - MacOS系统：`cursor_id_modifier_mac` 或 `cursor_id_modifier_mac_arm64`
-   - Linux系统：`cursor_id_modifier_linux`
-2. 以管理员身份运行程序
-3. 按照提示进行操作
-4. 重启Cursor即可
+#### 安装和使用方法
+
+1. 克隆此仓库
+2. 安装依赖：
+   ```bash
+   npm/pnpm/yarn install
+   ```
+3. 以管理员身份运行脚本：
+   ```bash
+   node main.js
+   ```
+4. 按照提示进行操作
+5. 重启 Cursor 即可
 
 ### 手动重置
 1. 完全关闭Cursor
